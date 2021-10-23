@@ -31,9 +31,9 @@
 Method | Route | Description
 --- | --- | ---
 `GET` | `/api/ads` | Fetch all the advertising campaigns
-`GET` | `/api/ads` | Create an advertising campaign
-`POST` | `/api/ads/:id` | Update the advertising campaign
-`PUT` | `/api/ads:id` | Fetch a single advertising campaign
+`GET` | `/api/ads:id` | Fetch a single advertising campaign
+`POST` | `/api/ads` | Create an advertising campaign
+`PUT` | `/api/ads/:id` | Update the advertising campaign
 
 ## Setup Docker
 
@@ -63,7 +63,7 @@ $ npm install
 $ php artisan serve
 $ npm run watch
 ```
-Open http://127.0.0.1:8000/ in the browser
+Open http://127.0.0.1:80/ in the browser
 
 ## Testing
 
