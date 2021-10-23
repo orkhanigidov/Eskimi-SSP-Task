@@ -40,12 +40,7 @@ Method | Route | Description
 ```
 $ git clone https://github.com/orkhanigidov/Eskimi-SSP-Task.git
 $ cd Eskimi-SSP-Task
-$ docker run --rm \
-    -u "$(id -u):$(id -g)" \
-    -v $(pwd):/var/www/html \
-    -w /var/www/html \
-    laravelsail/php80-composer:latest \
-    composer install --ignore-platform-reqs
+$ docker-compose up
 $ cp .env.example .env
 ```
 
