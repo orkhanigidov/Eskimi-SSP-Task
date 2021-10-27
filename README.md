@@ -5,8 +5,9 @@
 - [Technologies](#technologies)
 - [API Endpoints](#api-endpoints)
 - [Setup Docker](#setup-docker)
-- [Run Migration](#run-migration)
+- [Configuration](#configuration)
 - [Install Dependencies](#install-dependencies)
+- [Run Migration](#run-migration)
 - [Run Application](#run-application)
 - [Testing](#testing)
 
@@ -44,10 +45,14 @@ $ docker-compose up
 $ cp .env.example .env
 ```
 
-## Run Migration
+## Configuration
+
+Fill out relevant items in your `.env` file, including:
 
 ```
-$ php artisan migrate
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
 ```
 
 ## Install Dependencies
@@ -55,6 +60,12 @@ $ php artisan migrate
 ```
 $ composer install
 $ npm install
+```
+
+## Run Migration
+
+```
+$ php artisan migrate
 ```
 
 ## Run Application
